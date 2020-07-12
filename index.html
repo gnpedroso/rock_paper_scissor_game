@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-general">
+
+            <h1>Rock, Paper, Scissor Game</h1>
+
+            <div class="container-general">
+                <h3>Player:</h3>
+                <p>Choose yours:</p>
+                <ul id="options">
+                    <li class="btn btn-dark" data-opt="pRock" ><i class="far fa-hand-rock" data-opt="pRock"></i></li>
+                    <li class="btn btn-dark" data-opt="pPaper"><i class="far fa-hand-paper" data-opt="pPaper"></i></li>
+                    <li class="btn btn-dark" data-opt="pScissor"><i class="far fa-hand-scissors" data-opt="pScissor"></i></li>
+                </ul>
+                
+            </div>
+            
+            
+            <div class="container-general2">
+                <p>The computer chose: <span class='text-bold h4' id="computer"></span></p>
+               <div class="row">
+                   <div class="col-8">
+                    <h3>The result is: <span id="winner"></span></h3>
+                   </div>
+
+                   <div class="col-4">
+                        <h4>Score:</h4>
+                        <h6>Player: <span id="pScore">0</span></h6>
+                        <h6>Computer: <span id="cScore">0</span></h6>
+                   </div>
+               </div>
+
+               <button class="btn btn-info" id="reset">Reset</button>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    
+
+
+<script src='./js/app.js'></script>
+
+
+
+
+</body>
+
+
+
+
+</html>
